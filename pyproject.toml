@@ -1,0 +1,26 @@
+[project]
+name = "gopro-video-overlay"
+version = "1.1.0"
+description = "將 GoPro GPS、速度、高度等資料疊加到影片上"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "telemetrik>=0.1.0",
+    "numpy>=1.24.0",
+    "opencv-python-headless>=4.8.0",
+    "Pillow>=10.0.0",
+    "gradio>=4.0.0",
+    "imageio-ffmpeg>=0.5.0",
+    "certifi>=2024.0.0",
+]
+
+[project.scripts]
+gopro-overlay = "gopro_overlay.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["gopro_overlay*"]

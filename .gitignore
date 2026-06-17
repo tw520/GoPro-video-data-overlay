@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Output / temp
+*.raw
+output/
+samples/
+
+# User media & GPS data (do not commit)
+*.MP4
+*.mp4
+*.csv
+*.gpx
+*_gps*.json
+*.gps.json
+
+# Gradio
+.gradio/
