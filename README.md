@@ -30,11 +30,36 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-## 圖形介面（推薦）
+> **Windows 提示：** 若尚未安裝 Python，請至 [python.org](https://www.python.org/downloads/) 下載 3.10 以上版本，安裝時勾選 **Add python.exe to PATH**。
+
+## Windows 快速啟動（推薦）
+
+完成上述安裝後，之後每次使用只需**雙擊專案根目錄的 `run.bat`**，即可啟動圖形介面；腳本會自動切換到專案目錄、啟用虛擬環境並執行 `app.py`。
+
+```
+GoPro-video-data-overlay/
+└── run.bat    ← 雙擊此檔啟動
+```
+
+若雙擊後視窗立刻關閉或出現錯誤，請確認：
+
+1. 已完成「安裝」章節的步驟（專案內須有 `venv` 資料夾）
+2. 已安裝 Python 3.10+ 且可在命令提示字元執行 `python --version`
+3. 建議已安裝 FFmpeg 並加入 PATH（輸出品質較佳）
+
+也可在命令提示字元或 PowerShell 中手動執行：
+
+```bat
+run.bat
+```
+
+## 圖形介面
 
 ```powershell
 python app.py
 ```
+
+（Windows 使用者亦可直接雙擊 `run.bat`，效果相同。）
 
 瀏覽器會開啟本機介面：
 
@@ -78,6 +103,7 @@ python -m gopro_overlay.cli GX010001.MP4 -o output.mp4 ^
 ```
 GoPro-video-data-overlay/
 ├── app.py                 # Gradio 圖形介面
+├── run.bat                # Windows 一鍵啟動（雙擊執行）
 ├── gopro_overlay/
 │   ├── config.py          # 使用者設定
 │   ├── extract.py         # GPMF 解析（telemetrik）
