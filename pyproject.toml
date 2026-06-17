@@ -4,6 +4,8 @@ version = "1.1.0"
 description = "將 GoPro GPS、速度、高度等資料疊加到影片上"
 readme = "README.md"
 requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
 dependencies = [
     "telemetrik>=0.1.0",
     "numpy>=1.24.0",

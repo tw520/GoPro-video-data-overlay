@@ -88,9 +88,10 @@ GoPro-video-data-overlay/
 │   ├── video_io.py        # 影片 I/O 與工作目錄
 │   └── cli.py             # 命令列
 ├── requirements.txt
+├── LICENSE
 └── README.md
 ```
 
 ## 授權
 
-MIT
+本專案以 [GNU General Public License v3.0](LICENSE)（GPLv3）授權發佈。
